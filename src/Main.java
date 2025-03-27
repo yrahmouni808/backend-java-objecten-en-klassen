@@ -1,5 +1,7 @@
 package src;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 //        ApplePieRecipe applePieRecipe = new ApplePieRecipe();
@@ -10,5 +12,7 @@ public class Main {
         brownie.printIngredients();
         brownie.addStep("Throw it at the wall.");
         brownie.printSteps();
+        Film idk = new Film("Robert-Jan", "Rowan", LocalDate.of(2025, 3, 26), "Adult");
+        idk.printInfo();
     }
 }
