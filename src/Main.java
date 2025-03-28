@@ -6,9 +6,9 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-//        ApplePieRecipe applePieRecipe = new ApplePieRecipe();
-//        applePieRecipe.printIngredients();
-//        applePieRecipe.printSteps();
+        ApplePieRecipe applePieRecipe = new ApplePieRecipe();
+        applePieRecipe.printIngredients();
+        applePieRecipe.printSteps();
         Recipe brownie = new Recipe();
         brownie.addIngredient("Chocolate", 100, "gram");
         brownie.printIngredients();
@@ -26,5 +26,16 @@ public class Main {
         Manager frank = new Manager("Frank", 890);
         Company corp = new Company(frank, "HP");
         corp.printInfo();
+
+        Animal hond = new Animal("Lassie", "Golden Retriever", "With the monkeys", "Trash");
+        Animal aap = new Animal("George", "Bonobo", "With the monkeys", "Bananas");
+        Animal kat = new Animal("Minoesh", "Britse Korthaar", "On your lap", "Fish");
+        Zoo artis = new Zoo("Artis");
+        artis.printInfo();
+        artis.addAnimal(hond);
+        artis.addAnimal(aap);
+        artis.addAnimal(kat);
+        artis.printInfo();
+
     }
 }
