@@ -1,8 +1,6 @@
 package src;
 
-import Bonus.Film;
-import Bonus.Product;
-import Bonus.Store;
+import Bonus.*;
 
 import java.time.LocalDate;
 
@@ -24,5 +22,9 @@ public class Main {
         winkel.removeItem("telefoon", 200);
         winkel.printInfo();
         winkel.removeItem("telefoon", 0);
+
+        Manager frank = new Manager("Frank", 890);
+        Company corp = new Company(frank, "HP");
+        corp.printInfo();
     }
 }
